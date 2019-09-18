@@ -1,14 +1,22 @@
 var cropperApp = angular.module('svApp', [
     'ngRoute',
     'dataService',
+    'makeDataService',
     'personalInfoDirective',
-    'summaryDataDirective'
+    'summaryDataDirective',
+    'chartsDirective'
 ])
 
 cropperApp.config(function($routeProvider,$locationProvider) {
     $routeProvider
     .when("/", {
         templateUrl : "app/layout/home.html"
+    })
+    .when("/profile", {
+        templateUrl : "app/layout/profile.html"
+    })
+    .when("/charts", {
+        templateUrl : "app/layout/charts.html"
     })
 
     $locationProvider.hashPrefix('');
@@ -26,7 +34,7 @@ cropperApp.controller('MainCtrl', ['$scope', '$http', 'personInfo', function ($s
     });
 
     $scope.openBlockCharts = function(){
-        $scope.true = false;
+        $scope.showCharts = false;
     }
 
 }]);

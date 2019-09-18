@@ -1,12 +1,12 @@
 {
     "sv": {
         "info": {
-            "name": "Volodymyr",
-            "sunName": "Yeryhin",
-            "birthday": "1995.05.20",
-            "city": "Vinnitsa",
-            "phone": "(097) 610 60 06",
-            "email": "vova.yeryhin@gmail.com"
+            "Name": "Volodymyr",
+            "SunName": "Yeryhin",
+            "Birthday": "20.05.1995",
+            "City": "Vinnitsa",
+            "Phone": "(097) 610 60 06",
+            "Email": "vova.yeryhin@gmail.com"
         },
         "summary": {
             "mainInfo": "Front-end Developer with 2+ years of experience developing. Specializes in AngularJS."
@@ -32,7 +32,7 @@
                 "title": "Atlasiko inc",
                 "position": "Front-end Developer",
                 "date": "Jan '18 -- Current",
-                "about": "Сreation of additional functionality for our product  https://gudhub.com/Creating visualizations for kitchens https://visualizer.diamondatlowes.com/"
+                "about": "Сreation of additional functionality for our product  https://gudhub.com/ Creating visualizations for kitchens https://visualizer.diamondatlowes.com/"
             }
         ],
         "skills": {

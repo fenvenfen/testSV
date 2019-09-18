@@ -12,11 +12,15 @@ angular.module('summaryDataDirective', [
                 $scope.experience = data.sv.experience;
             }],
             template: function () {
-                return `<div>{{sum.mainInfo}}</div>
+                return `<div class="container">
+                <h2>Profile</h2>
+                <div><p>{{sum.mainInfo}}</p></div>
+                <h6>Education</h6>
                 <ul>
                     <li ng-repeat="education in edu">{{education}}</li>
                 </ul>
-                <work-experience></work-experience>`
+                <h6>Work experience</h6>
+                <work-experience></work-experience></div>`
             }
         }      
     }])

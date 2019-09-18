@@ -13,9 +13,9 @@ angular.module('personalInfoDirective', [])
         }];
 
         directive.template = function() {
-            return  `<h1 class="center">{{ghInfo}}<span class="badge badge-secondary">Test</span></h1>
+            return  `<h1 class="center">{{ghInfo}} <span class="badge badge-secondary">v1.0.0</span></h1>
                 <div ng-repeat="(key, value) in data.sv.info">
-                    <h5>{{key}}<span>  {{value}} </span></h5>
+                    <h5>{{key}}:<span>  {{value}} </span></h5>
                 </div>
             `
         }
