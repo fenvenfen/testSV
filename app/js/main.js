@@ -19,8 +19,14 @@ cropperApp.config(function($routeProvider,$locationProvider) {
 cropperApp.controller('MainCtrl', ['$scope', '$http', 'personInfo', function ($scope, $http, personInfo) {
     console.log("MAIN CONTORLLER")
     $scope.titleOfMainPage = "My Personal Page";
+    $scope.showCharts = false;
     //Get main data from json and send to save in service
     $http.get('../data.json').then(function (response) {
         personInfo.setInfoData(angular.copy(response.data))
     });
+
+    $scope.openBlockCharts = function(){
+        $scope.true = false;
+    }
+
 }]);
